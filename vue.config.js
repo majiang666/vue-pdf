@@ -1,6 +1,6 @@
 // vue.config.js
 module.exports = {
-    baseUrl:"./",
+    publicPath:"./",
     // outputDir:"dist",
     // assetsDir:"assets",
     // indexPath:"index.html",
@@ -9,7 +9,7 @@ module.exports = {
     // lintOnSave:true,
     // runtimeCompiler:false,
     // transpileDependencies:[],
-    // productionSourceMap:false,
+    productionSourceMap:false,
     // crossorigin:undefined,
     // integrity:false,
     // devServer:{//代理

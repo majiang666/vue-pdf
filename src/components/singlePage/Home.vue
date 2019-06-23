@@ -6,9 +6,9 @@
 </template>
 
 <script>
-import pdfFile  from 'file-loader!../assets/1.pdf';
+import pdfFile  from 'file-loader!../../assets/1.pdf';
 import Canvas from './canvas';
-import Loading from './Loading';
+import Loading from '../Loading';
 export default {
   name: 'home',
   data(){

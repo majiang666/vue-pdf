@@ -1,15 +1,15 @@
 <template>
     <div class="bar">
-        <span @click="prePage">上一页</span>
-        <span @click="bigPage">+</span>
+        <span @click="prePage"><img src="../../assets/pre.svg" /></span>
+        <span @click="bigPage"><img src="../../assets/fd.svg" /></span>
         <span>{{ curPage }}/{{ total }}</span>
-        <span @click="smallPage">-</span>
-        <span @click="nextPage">下一页</span>
+        <span @click="smallPage"><img src="../../assets/sx.svg" /></span>
+        <span @click="nextPage"><img src="../../assets/next.svg" /></span>
     </div>
 </template>
 
 <script>
-import Bus from './bus';
+import Bus from '../bus';
 export default {
     data () {
         return {
@@ -28,10 +28,9 @@ export default {
 <style>
     .bar{
         position:fixed;
-        bottom:0;
+        bottom:10px;
         left:0;
         right:0;
-        background: #ccc;
         height:50px;
         width: 100%;
         display: flex;
@@ -40,6 +39,10 @@ export default {
         flex:1;
         text-align: center;
         line-height: 50px;
+    }
+    .bar span img{
+        width:28px;
+        margin-top:11px;
     }
 </style>
 

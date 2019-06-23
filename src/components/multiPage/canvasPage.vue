@@ -6,7 +6,7 @@
 </template>
 <script>
 import pdfjsLib from 'pdfjs-dist';
-import Bus from './bus';
+import Bus from '../bus';
 export default {
     data(){
         return {

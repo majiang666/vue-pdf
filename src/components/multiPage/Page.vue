@@ -3,9 +3,9 @@
     <Loading :loading="loading" />
     <Canvas 
     :src="pdfFile" 
-    v-on:loadingFun="closeLoading" 
+    @loadingFun="closeLoading" 
     :curPage="curPage"
-    v-on:totals="totalsFun"
+    @totals="totalsFun"
     :scale="scale"
     />
     <Bar 
@@ -20,8 +20,8 @@
 
 <script>
 import Canvas from './canvasPage';
-import pdfFile  from 'file-loader!../assets/1.pdf';
-import Loading from './Loading';
+import pdfFile  from 'file-loader!../../assets/1.pdf';
+import Loading from '../Loading';
 import Bar from './bar';
 export default {
   name: 'page',
