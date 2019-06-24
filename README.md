@@ -9,6 +9,8 @@ https://github.com/mozilla/pdf.js/wiki/Setup-pdf.js-in-a-website
 ## yarn serve
 ## yarn build
 
+## 单页滚动
 ![单页滚动](https://github.com/majiang666/vue-pdf/blob/master/g1.gif)
 
+## 多页翻页
 ![多页翻页](https://github.com/majiang666/vue-pdf/blob/master/g2.gif)
